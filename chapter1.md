@@ -43,3 +43,4 @@ The first set is ![equation](https://latex.codecogs.com/gif.latex?%5Cleft%5C%7B0
 the reinforcement learning player? Can you think of any better way to solve
 the tic-tac-toe problem as posed?
 #### Answer
+* X's and O's can have the same policy (depends on who's the firt move)
