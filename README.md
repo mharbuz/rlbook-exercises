@@ -7,3 +7,4 @@ The book can be found: https://web.stanford.edu/class/psych209/Readings/SuttonBa
 Have other solutions or think mine are wrong? Share your thoughts! 
 
 [Chapter 1](chapter1.md)
+[Chapter 2](chapter2.md)
