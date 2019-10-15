@@ -29,7 +29,7 @@ How much better will it be? Express your answer quantitatively.
 Winner would be red one (ε = 0.01) because it converges to 1 - ε = 0.99. It is 0.09 greater than blue one (ε = 0.1) which converges to 1 - ε = 0.9.
 
 ### Exercise 2.4
-If the step-size parameters, ![equation](http://latex.codecogs.com/svg.latex?\alpha_{n}) αn, are not constant, then the estimate ![equation](http://latex.codecogs.com/svg.latex?Q_{n}) is a weighted average of previously received rewards with a weighting different from that given by (2.6). What is the weighting on each prior reward for the general case, analogous to (2.6), in terms of the sequence of step-size parameters?
+If the step-size parameters, ![equation](http://latex.codecogs.com/svg.latex?\alpha_{n}), are not constant, then the estimate ![equation](http://latex.codecogs.com/svg.latex?Q_{n}) is a weighted average of previously received rewards with a weighting different from that given by (2.6). What is the weighting on each prior reward for the general case, analogous to (2.6), in terms of the sequence of step-size parameters?
 #### Answer
 ![Figure 2.2](assets/answer-002_4_01.jpg)
 
