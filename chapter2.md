@@ -17,3 +17,13 @@ random. On which time steps did this definitely occur? On which time steps could
 possibly have occurred?
 #### Answer
 ε case occured in steps: 2, 5
+ε case might occured in steps 1 (depends on algoritm because every action has the same value and we don't know how it is broken).
+
+### Excercise 2.3
+In the comparison shown in Figure 2.2 ![Figure 2.2](assets/figure-002_2.jpg), 
+
+which method will perform best in
+the long run in terms of cumulative reward and probability of selecting the best action?
+How much better will it be? Express your answer quantitatively.
+#### Answer
+Winner would be red one (ε = 0.01) because it converges to 1 - ε = 0.99. It is 0.09 greater than blue one (ε = 0.1) which converges to 1 - ε = 0.9.
