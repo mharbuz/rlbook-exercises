@@ -40,7 +40,7 @@ Q_{n+1}
 = Q_{n} + \alpha_{n}\left(R_{n} - Q_{n}\right)
 = \alpha_{n}R_{n} + \left(1-\alpha_{n}\right)\left[Q_{n-1} + \alpha_{n-1}\left(R_{n-1} - Q_{n-1}\right)\right] 
 = \ldots 
-= \sum_{i=n}^{1}\alpha_{i}R_{i}\prod_{j=i+1}^{n}\left(1 - \alpha_{j}\right)
+= \sum_{i=n}^{1}\alpha_{i}R_{i}\prod_{j=i+1}^{n}\left(1 - \alpha_{j}\right) + Q_{1}\prod_{i=1}^{n}(1-\alpha_{i})
 ```
 
 
