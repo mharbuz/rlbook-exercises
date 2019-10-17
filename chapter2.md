@@ -46,3 +46,17 @@ Q_{n+1}
 
 ### Exercise 2.5
 skipping - programming excercise
+
+
+### Exercise 2.6
+*Mysterious Spikes* ![Figure 2.3](assets/figure-002_3.jpg) 
+
+The results shown in Figure 2.3 should be quite reliable
+because they are averages over 2000 individual, randomly chosen 10-armed bandit tasks.
+Why, then, are there oscillations and spikes in the early part of the curve for the optimistic
+method? In other words, what might make this method perform particularly better or
+worse, on average, on particular early steps?
+#### Answer
+Used algorithm is greedy so after few starting steps every action would be performed when optimistic value is higher than real optimal value (after every choose of action the value should be lower). The smaller step size parameter α is the more steps are required to lower optimistic action value to more real action value.
+
+After any action value is lower than action value with high real action value (it can be optimal action or action with value near to optimal) the algorithm stick to that action during many steps. It can be also action value just occasionaly high and after few episodes the real value for that action will reveal and value should change to low enough to get to another action as best one.
