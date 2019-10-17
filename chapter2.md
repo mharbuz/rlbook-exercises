@@ -60,3 +60,29 @@ worse, on average, on particular early steps?
 Used algorithm is greedy so after few starting steps every action would be performed when optimistic value is higher than real optimal value (after every choose of action the value should be lower). The smaller step size parameter α is the more steps are required to lower optimistic action value to more real action value.
 
 After any action value is lower than action value with high real action value (it can be optimal action or action with value near to optimal) the algorithm stick to that action during many steps. It can be also action value just occasionaly high and after few episodes the real value for that action will reveal and value should change to low enough to get to another action as best one.
+
+### Exercise 2.7
+*Unbiased Constant-Step-Size Trick* In most of this chapter we have used
+sample averages to estimate action values because sample averages do not produce the
+initial bias that constant step sizes do (see the analysis leading to (2.6)). However, sample
+averages are not a completely satisfactory solution because they may perform poorly
+on nonstationary problems. Is it possible to avoid the bias of constant step sizes while
+retaining their advantages on nonstationary problems? One way is to use a step size of
+n
+
+to process the n-th reward for a particular action, where α > 0 is a conventional constant
+step size, and  ̄on is a trace of one that starts at 0:
+Carry out an analysis like that in (2.6) to show that Qn is an exponential recency-weighted
+average without initial bias.
+
+#### Answer
+*latex:*
+
+```
+    \bar{o}_{0} = 0
+    \bar{o}_{1} = \alpha
+\bar{o}_{n+1} = \bar{o}_{n} - \alpha \left(1 - \bar{o}_{n}\right) = \alpha - \left(1 - \alpha\right)\bar{o}_{n}    
+= \alpha + \alpha\left(1 - \alpha\right) + \alpha\left(1 - \alpha\right)^{2} + \alpha\left(1 - \alpha\right)^{3}\bar{o}_{n-2}
+= \alpha + \alpha\left(1 - \alpha\right) + \alpha\left(1 - \alpha\right)^{2} + \cdots + \left(1 - \alpha\right)^{n-1}\alpha + \left(1 - \alpha\right)^{n}\cdot0
+= \alpha\sum_{i=0}^{n-1}\left(1 - \alpha\right)^{i}
+```
