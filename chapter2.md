@@ -90,3 +90,12 @@ average without initial bias.
 = \alpha\sum_{i=0}^{n-1}\left(1 - \alpha\right)^{i}
 \beta_{n} = \frac{\alpha}{\bar{o}_{n}} = \frac{\alpha}{\alpha\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}} = \frac{1}{\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}}
 ```
+### Exercise 2.7
+![Figure 2.4](assets/figure-002_04.jpg)
+
+*UCB Spikes* In Figure 2.4 the UCB algorithm shows a distinct spike
+in performance on the 11th step. Why is this? Note that for your answer to be fully
+satisfactory it must explain both why the reward increases on the 11th step and why it
+decreases on the subsequent steps. Hint: if c = 1, then the spike is less prominent.
+
+#### Answer
