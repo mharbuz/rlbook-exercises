@@ -76,13 +76,17 @@ Carry out an analysis like that in (2.6) to show that Qn is an exponential recen
 average without initial bias.
 
 #### Answer
+
+![answer 2.7](assets/answer-002_07_01.jpg)
+
 *latex:*
 
 ```
-    \bar{o}_{0} = 0
-    \bar{o}_{1} = \alpha
-\bar{o}_{n+1} = \bar{o}_{n} - \alpha \left(1 - \bar{o}_{n}\right) = \alpha - \left(1 - \alpha\right)\bar{o}_{n}    
+\bar{o}_{0} = 0
+\bar{o}_{1} = \alpha
+\bar{o}_{n+1} = \bar{o}_{n} + \alpha \left(1 - \bar{o}_{n}\right) = \alpha - \left(1 - \alpha\right)\bar{o}_{n}    
 = \alpha + \alpha\left(1 - \alpha\right) + \alpha\left(1 - \alpha\right)^{2} + \alpha\left(1 - \alpha\right)^{3}\bar{o}_{n-2}
 = \alpha + \alpha\left(1 - \alpha\right) + \alpha\left(1 - \alpha\right)^{2} + \cdots + \left(1 - \alpha\right)^{n-1}\alpha + \left(1 - \alpha\right)^{n}\cdot0
 = \alpha\sum_{i=0}^{n-1}\left(1 - \alpha\right)^{i}
+\beta_{n} = \frac{\alpha}{\bar{o}_{n}} = \frac{\alpha}{\alpha\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}} = \frac{1}{\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}}
 ```
