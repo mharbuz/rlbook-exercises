@@ -90,7 +90,7 @@ average without initial bias.
 = \alpha\sum_{i=0}^{n-1}\left(1 - \alpha\right)^{i}
 \beta_{n} = \frac{\alpha}{\bar{o}_{n}} = \frac{\alpha}{\alpha\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}} = \frac{1}{\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}}
 ```
-### Exercise 2.7
+### Exercise 2.8
 ![Figure 2.4](assets/figure-002_04.jpg)
 
 *UCB Spikes* In Figure 2.4 the UCB algorithm shows a distinct spike
@@ -99,3 +99,6 @@ satisfactory it must explain both why the reward increases on the 11th step and 
 decreases on the subsequent steps. Hint: if c = 1, then the spike is less prominent.
 
 #### Answer
+![UCB equation](assets/answer-002_08_01.jpg)
+
+At the beginning all actions are considered as maximizing actions (if Nt(a) = 0, then a is considered to be a maximizing action). It takes 10 steps to perform each action exactly one. After that first round each action has the same level of confidence (~3.035) which is bigger than reward. UCB algoritm is forced to explore other actions than the one with the highest reward.
