@@ -102,3 +102,18 @@ decreases on the subsequent steps. Hint: if c = 1, then the spike is less promin
 ![UCB equation](assets/answer-002_08_01.jpg)
 
 At the beginning all actions are considered as maximizing actions (if Nt(a) = 0, then a is considered to be a maximizing action). It takes 10 steps to perform each action exactly one. After that first round each action has the same level of confidence (~3.035) which is bigger than reward. UCB algoritm is forced to explore other actions than the one with the highest reward.
+
+### Exercise 2.9
+
+Show that in the case of two actions, the soft-max distribution is the same
+as that given by the logistic, or sigmoid, function often used in statistics and artificial
+neural networks.
+
+#### Answer
+
+![sigmoid function](assets/answer-002_09_01.jpg)
+
+let assume that c = -b
+then we have
+
+![softmax to sigmoid](assets/answer-002_09_02.jpg)
