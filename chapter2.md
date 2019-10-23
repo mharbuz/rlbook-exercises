@@ -116,4 +116,31 @@ neural networks.
 let assume that c = -b
 then we have
 
-![softmax to sigmoid](assets/answer-002_09_02.jpg)
+![softmax to sigmoid](assets/answer-002_09_02.jpg
+
+### Exercise 2.10
+Suppose you face a 2-armed bandit task whose true action values change
+randomly from time step to time step. Specifically, suppose that, for any time step, the
+true values of actions 1 and 2 are respectively 0.1 and 0.2 with probability 0.5 (case A),
+and 0.9 and 0.8 with probability 0.5 (case B). If you are not able to tell which case you
+face at any step, what is the best expectation of success you can achieve and how should
+you behave to achieve it? Now suppose that on each step you are told whether you are
+facing case A or case B (although you still don’t know the true action values). This is an
+associative search task. What is the best expectation of success you can achieve in this
+task, and how should you behave to achieve it?
+
+#### Answer
+
+*latex:*
+
+```
+\def\arraystretch{2}
+\begin{tabular}{c|cc|c}
+ \hline
+ case & arm 1 & arm 2 & prob \\
+ \hline
+ A & 0.1 & 0.2 & $\frac{1}{2}$ \\
+ B & 0.9 & 0.8 & $\frac{1}{2}$ \\
+ \hline
+\end{tabular}
+```
