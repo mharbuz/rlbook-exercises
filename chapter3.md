@@ -17,3 +17,30 @@ many different ways. Stretch its limits in some way in at least one of your exam
   Reward (cost) is MAE (mean absolute error) between predicted and real stock price.  
   State is a history of stock price for some time (ex. 2 months to the past).  
   Action can be increase/decrease predicted stock price.
+
+### Exercise 3.2
+Is the MDP framework adequate to usefully represent all goal-directed
+learning tasks? Can you think of any clear exceptions?
+#### Answer
+One exception I can think about is model with infinite states space.
+
+### Exercise 3.3
+Consider the problem of driving. You could define the actions in terms of
+the accelerator, steering wheel, and brake, that is, where your body meets the machine.
+Or you could define them farther out—say, where the rubber meets the road, considering
+your actions to be tire torques. Or you could define them farther in—say, where your
+brain meets your body, the actions being muscle twitches to control your limbs. Or you
+could go to a really high level and say that your actions are your choices of where to drive.
+What is the right level, the right place to draw the line between agent and environment?
+On what basis is one location of the line to be preferred over another? Is there any
+fundamental reason for preferring one location over another, or is it a free choice?
+#### Answer
+Choice where the agent has the most control over state through his action seems to be the most accurate.
+
+### Exercise 3.4
+Give a table analogous to that in Example 3.3, but for p(s0, r|s, a). It should have columns for s, a, s0, r, and p(s0, r|s, a), and a row for every 4-tuple for which p(s0, r|s, a) > 0.
+
+![example 3.3](assets/answer-003_04_01.jpg)
+
+#### Answer 
+![answer 3.3](assets/answer-003_04_02.jpg)
