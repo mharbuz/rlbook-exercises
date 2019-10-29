@@ -4,4 +4,5 @@
 ### Optimistic Initial Values
 ### Upper-Confidence-Bound
 ### Gradient Bandit Algorithms
-*figure 2.6 - page 42*
+## Algorithms comparison
+![algorithms comparison](assets/figure-002_06.jpg)
