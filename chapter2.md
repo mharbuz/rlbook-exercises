@@ -116,7 +116,7 @@ neural networks.
 let assume that c = -b
 then we have
 
-![softmax to sigmoid](assets/answer-002_09_02.jpg
+![softmax to sigmoid](assets/answer-002_09_02.jpg)
 
 ### Exercise 2.10
 Suppose you face a 2-armed bandit task whose true action values change
@@ -130,6 +130,8 @@ associative search task. What is the best expectation of success you can achieve
 task, and how should you behave to achieve it?
 
 #### Answer
+![probs table](assets/answer-002_10_01.jpg)
+If there is no clue about 2 cases we can achieve success in 50% tries. We can stick to one of action (1 or 2) and expected reward would be 0.5.
 
 *latex:*
 
