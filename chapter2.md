@@ -90,3 +90,59 @@ average without initial bias.
 = \alpha\sum_{i=0}^{n-1}\left(1 - \alpha\right)^{i}
 \beta_{n} = \frac{\alpha}{\bar{o}_{n}} = \frac{\alpha}{\alpha\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}} = \frac{1}{\sum_{i=0}^{n-2}\left(1 - \alpha\right)^{i}}
 ```
+### Exercise 2.8
+![Figure 2.4](assets/figure-002_04.jpg)
+
+*UCB Spikes* In Figure 2.4 the UCB algorithm shows a distinct spike
+in performance on the 11th step. Why is this? Note that for your answer to be fully
+satisfactory it must explain both why the reward increases on the 11th step and why it
+decreases on the subsequent steps. Hint: if c = 1, then the spike is less prominent.
+
+#### Answer
+![UCB equation](assets/answer-002_08_01.jpg)
+
+At the beginning all actions are considered as maximizing actions (if Nt(a) = 0, then a is considered to be a maximizing action). It takes 10 steps to perform each action exactly one. After that first round each action has the same level of confidence (~3.035) which is bigger than reward. UCB algoritm is forced to explore other actions than the one with the highest reward.
+
+### Exercise 2.9
+
+Show that in the case of two actions, the soft-max distribution is the same
+as that given by the logistic, or sigmoid, function often used in statistics and artificial
+neural networks.
+
+#### Answer
+
+![sigmoid function](assets/answer-002_09_01.jpg)
+
+let assume that c = -b
+then we have
+
+![softmax to sigmoid](assets/answer-002_09_02.jpg)
+
+### Exercise 2.10
+Suppose you face a 2-armed bandit task whose true action values change
+randomly from time step to time step. Specifically, suppose that, for any time step, the
+true values of actions 1 and 2 are respectively 0.1 and 0.2 with probability 0.5 (case A),
+and 0.9 and 0.8 with probability 0.5 (case B). If you are not able to tell which case you
+face at any step, what is the best expectation of success you can achieve and how should
+you behave to achieve it? Now suppose that on each step you are told whether you are
+facing case A or case B (although you still don’t know the true action values). This is an
+associative search task. What is the best expectation of success you can achieve in this
+task, and how should you behave to achieve it?
+
+#### Answer
+![probs table](assets/answer-002_10_01.jpg)
+If there is no clue about 2 cases we can achieve success in 50% tries. We can stick to one of action (1 or 2) and expected reward would be 0.5.
+
+*latex:*
+
+```
+\def\arraystretch{2}
+\begin{tabular}{c|cc|c}
+ \hline
+ case & arm 1 & arm 2 & prob \\
+ \hline
+ A & 0.1 & 0.2 & $\frac{1}{2}$ \\
+ B & 0.9 & 0.8 & $\frac{1}{2}$ \\
+ \hline
+\end{tabular}
+```
