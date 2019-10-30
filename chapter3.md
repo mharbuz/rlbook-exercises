@@ -44,3 +44,15 @@ Give a table analogous to that in Example 3.3, but for p(s0, r|s, a). It should 
 
 #### Answer 
 ![answer 3.3](assets/answer-003_04_02.jpg)
+
+### Exercise 3.5
+The equations in Section 3.1 are for the continuing case and need to be
+modified (very slightly) to apply to episodic tasks. Show that you know the modifications
+needed by giving the modified version of equation (3.3).
+
+![equation 3.3](assets/answer-003_05_02.jpg)
+
+#### Answer
+For episodic tasks we should get next state not from set of nonterminal states but from set of all states.
+
+![answer 3.5](assets/answer-003_05_01.jpg)
