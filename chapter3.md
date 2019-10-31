@@ -63,6 +63,9 @@ discounting, with all rewards zero except for -1 upon failure. What then would t
 return be at each time? How does this return differ from that in the discounted, continuing
 formulation of this task?
 
+#### Answer
+For a episodic discounted task return would be -γ^{T-1} where T is number of steps in each episode
+
 ### Exercise 3.7
 Imagine that you are designing a robot to run a maze. You decide to give it a
 reward of +1 for escaping from the maze and a reward of zero at all other times. The task
