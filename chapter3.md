@@ -98,4 +98,9 @@ Prove the second equality in (3.10).
 
 ![answer 3.10](assets/answer-003_10_01.jpg)
 
-
+*latex:*
+```
+\sum_{k=0}^{\infty} y^k = 1 + y + y^2 + y^3 + ... =     
+= 1 + y(1 + y + y^2 + y^3 + ...) = 1 + y\left(\sum_{k=0}^{\infty} y^k\right)    
+\sum_{k=0}^{\infty} y^k = - \frac{1}{y-1} = \frac{1}{1-y}   
+```
