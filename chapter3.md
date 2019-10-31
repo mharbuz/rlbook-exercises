@@ -56,3 +56,35 @@ needed by giving the modified version of equation (3.3).
 For episodic tasks we should get next state not from set of nonterminal states but from set of all states.
 
 ![answer 3.5](assets/answer-003_05_01.jpg)
+
+### Exercise 3.6
+Suppose you treated pole-balancing as an episodic task but also used
+discounting, with all rewards zero except for -1 upon failure. What then would the
+return be at each time? How does this return differ from that in the discounted, continuing
+formulation of this task?
+
+### Exercise 3.7
+Imagine that you are designing a robot to run a maze. You decide to give it a
+reward of +1 for escaping from the maze and a reward of zero at all other times. The task
+seems to break down naturally into episodes—the successive runs through the maze—so
+you decide to treat it as an episodic task, where the goal is to maximize expected total
+reward (3.7). After running the learning agent for a while, you find that it is showing
+no improvement in escaping from the maze. What is going wrong? Have you effectively
+communicated to the agent what you want it to achieve?
+
+#### Answer 
+There is no discounting so the reward is the same, no matter how quickly agent escape from a maze.
+For the agent there is no difference between quick and long escape.
+
+### Exercise 3.8
+Suppose γ = 0.5 and the following sequence of rewards is received R1 = 1, R2 = 2, R3 = 6, R4 = 3, and R5 = 2, with T = 5. What are G0, G1, ..., G5? *Hint: Work backwards.*
+
+#### Answer
+![answer 3.8](assets/answer-003_08_01.jpg)
+
+### Exercise 3.9
+Suppose γ = 0.9 and the reward sequence is R1 = 2 followed by an infinite
+sequence of 7s. What are G1 and G0?
+
+#### Answer
+![answer 3.9](assets/answer-003_09_01.jpg)
