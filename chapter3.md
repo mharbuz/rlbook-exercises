@@ -88,3 +88,14 @@ sequence of 7s. What are G1 and G0?
 
 #### Answer
 ![answer 3.9](assets/answer-003_09_01.jpg)
+
+### Exercise 3.10
+Prove the second equality in (3.10).
+
+![equation 3.10](assets/answer-003_10_02.jpg)
+
+#### Answer
+
+![answer 3.10](assets/answer-003_10_01.jpg)
+
+
