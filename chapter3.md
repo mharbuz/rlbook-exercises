@@ -123,3 +123,9 @@ function p (3.2)?
 \mathbb{E}\left[R_{t+1} \middle|S_{t}\right] = \sum_{a \in \mathcal{A}} \pi\left(a \middle| S_t\right) \cdot r(S_t, a) =
 = \sum_{a \in \mathcal{A}} \pi\left(a \middle| S_t\right) \cdot \sum_{r \in \mathcal{R}} r \sum_{s' \in \mathcal{S}} p\left(s', r \middle| S_t, a\right)
 ```
+### Exercise 3.12
+Give an equation for vπ in terms of qπ and π.
+
+#### Answer
+
+![answer 3.12](assets/answer-003_12_01.png)
