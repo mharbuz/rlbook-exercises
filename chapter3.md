@@ -129,3 +129,10 @@ Give an equation for vπ in terms of qπ and π.
 #### Answer
 
 ![answer 3.12](assets/answer-003_12_01.png)
+
+### Exercise 3.13
+Give an equation for qπ in terms of vπ and the four-argument p.
+
+#### Answer
+
+![answer 3.13](assets/answer-003_13_01.png)
