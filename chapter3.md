@@ -107,3 +107,19 @@ Prove the second equality in (3.10).
 = 1 + y(1 + y + y^2 + y^3 + ...) = 1 + y\left(\sum_{k=0}^{\infty} y^k\right)    
 \sum_{k=0}^{\infty} y^k = - \frac{1}{y-1} = \frac{1}{1-y}   
 ```
+
+### Exercise 3.11
+If the current state is St, and actions are selected according to stochastic
+policy π, then what is the expectation of Rt+1 in terms of π and the four-argument
+function p (3.2)?
+
+#### Answer
+
+![answer 3.11](assets/answer-003_11_01.png)
+
+*latext:*
+
+```
+\mathbb{E}\left[R_{t+1} \middle|S_{t}\right] = \sum_{a \in \mathcal{A}} \pi\left(a \middle| S_t\right) \cdot r(S_t, a) =
+= \sum_{a \in \mathcal{A}} \pi\left(a \middle| S_t\right) \cdot \sum_{r \in \mathcal{R}} r \sum_{s' \in \mathcal{S}} p\left(s', r \middle| S_t, a\right)
+```
