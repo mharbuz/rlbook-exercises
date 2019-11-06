@@ -150,3 +150,24 @@ for the center state, valued at +0.7, with respect to its four neighboring state
 0.25 * (0 + 0.9 * 2.3) + 0.25 * (0 + 0.9 * 0,4) + 0.25 * (0 - 0.9 * 0.4) + 0.25 * (0 + 0.9 * 0.7) = 
 
 = 0.5175 + 0.09 - 0.09 + 0.1575 = 0.675 ≅ 0.7
+
+### Exercise 3.15
+
+In the gridworld example, rewards are positive for goals, negative for
+running into the edge of the world, and zero the rest of the time. Are the signs of these
+rewards important, or only the intervals between them? Prove, using (3.8), that adding a
+constant c to all the rewards adds a constant, vc, to the values of all states, and thus
+does not affect the relative values of any states under any policies. What is vc in terms
+of c and γ?
+
+#### Answer
+
+![answer 3.15](assets/answer-003_15_01.png)
+
+*latex:*
+
+```
+G_t = \sum_{k=0}^{\infty} \gamma^k R_{t+1+k}    
+G'_t = \sum_{k=0}^{\infty} \gamma^k \left(R_{t+1+k} + c\right) = \sum_{k=0}^{\infty} \gamma^k R_{t+1+k} + \sum_{k=0}^{\infty} c\cdot \gamma^k = 
+= G_t + \frac{c}{1 - \gamma}
+```
