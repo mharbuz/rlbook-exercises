@@ -181,3 +181,16 @@ as in the continuing task above? Why or why not? Give an example.
 For episodic task the sum doesn't go to infinity so te equation above is no longer true. 
 Have a look for maze  runner task which can be finished in one step. Each step has reward -1 and terminal state has reward of 1.
 If we add 10 to every reward then longer path can cause higher reward. Without adding constant 10 to all rewards the shortest path is the best.
+
+### Exercise 3.17
+
+What is the Bellman equation for action values, that
+is, for qπ? It must give the action value qπ(s, a) in terms of the action
+values, qπ(s', a'), of possible successors to the state–action pair (s, a).
+Hint: the backup diagram to the right corresponds to this equation.
+Show the sequence of equations analogous to (3.14), but for action
+values.
+
+#### Answer
+
+![answer 3.17](assets/answer-003_17_01.jpg)
