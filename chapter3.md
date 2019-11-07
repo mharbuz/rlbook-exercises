@@ -171,3 +171,13 @@ G_t = \sum_{k=0}^{\infty} \gamma^k R_{t+1+k}
 G'_t = \sum_{k=0}^{\infty} \gamma^k \left(R_{t+1+k} + c\right) = \sum_{k=0}^{\infty} \gamma^k R_{t+1+k} + \sum_{k=0}^{\infty} c\cdot \gamma^k = 
 = G_t + \frac{c}{1 - \gamma}
 ```
+### Exercise 3.16
+
+Now consider adding a constant c to all the rewards in an episodic task,
+such as maze running. Would this have any effect, or would it leave the task unchanged
+as in the continuing task above? Why or why not? Give an example.
+
+#### Answer
+For episodic task the sum doesn't go to infinity so te equation above is no longer true. 
+Have a look for maze  runner task which can be finished in one step. Each step has reward -1 and terminal state has reward of 1.
+If we add 10 to every reward then longer path can cause higher reward. Without adding constant 10 to all rewards the shortest path is the best.
