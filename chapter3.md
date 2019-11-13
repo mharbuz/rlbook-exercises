@@ -259,5 +259,7 @@ each action. There are exactly two deterministic policies,
 #### Answer
 
 For γ = 0.9 optimal is π_right policy.
+
 For γ = 0.5 both policies are equal.
+
 For γ = 0.0 optimal is π_left policy.
