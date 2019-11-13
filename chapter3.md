@@ -229,3 +229,11 @@ value notation appears in the equation.
 
 #### Answer
 _ToDo_
+
+### Exercise 3.20
+Draw or describe the optimal state-value function for the golf example.
+
+![figure 3.3](assets/answer-003_20_01.png)
+
+#### Answer
+We should use driver to get to the green field and then choose to use putter to finish in one put.
