@@ -237,3 +237,12 @@ Draw or describe the optimal state-value function for the golf example.
 
 #### Answer
 We should use driver to get to the green field and then choose to use putter to finish in one put.
+
+### Exercise 3.21
+Draw or describe the contours of the optimal action-value function for putting, q*(s, putter), for the golf example.
+
+#### Answer
+The optimal action-value function is the same as state value for putter.
+
+![answer 3.21](assets/answer-003_21_01.png)
+
