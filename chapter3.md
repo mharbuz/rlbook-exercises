@@ -246,3 +246,18 @@ The optimal action-value function is the same as state value for putter.
 
 ![answer 3.21](assets/answer-003_21_01.png)
 
+### Exercise 3.22
+Consider the continuing MDP shown on to the
+right. The only decision to be made is that in the top state,
+where two actions are available, left and right. The numbers
+show the rewards that are received deterministically after
+each action. There are exactly two deterministic policies,
+π_left and π_right. What policy is optimal if γ = 0? If γ = 0.9? If γ = 0.5?
+
+![exercise 3.22 MDP](assets/answer-003_22_01.png)
+
+#### Answer
+
+For γ = 0.9 optimal is π_right policy.
+For γ = 0.5 both policies are equal.
+For γ = 0.0 optimal is π_left policy.
