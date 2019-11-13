@@ -210,7 +210,23 @@ a second equation in which the expected value is written out explicitly in terms
 such that no expected value notation appears in the equation.
 
 #### Answer
-_ToDo_
+![answer 3.18.1](assets/answer-003_18_02.png)
+
+![answer 3.18.1](assets/answer-003_18_03.png)
+
+_latex:_
+
+```
+    v_{\pi}(s) = 
+    \mathbb{E}_{\pi}\left[q_{\pi}\left(s, a_1\right)\right] + 
+    \mathbb{E}_{\pi}\left[q_{\pi}\left(s, a_2\right)\right] + 
+    \mathbb{E}_{\pi}\left[q_{\pi}\left(s, a_3\right)\right]
+    
+    v_{\pi}(s) = 
+    \pi\left(a_1 \middle| s\right) \cdot q_{\pi}\left(s, a_1\right) + 
+    \pi\left(a_2 \middle| s\right) \cdot q_{\pi}\left(s, a_2\right) + 
+    \pi\left(a_3 \middle| s\right) \cdot q_{\pi}\left(s, a_3\right)
+```
 
 ### Exercise 3.19
 The value of an action, qπ(s, a), depends on the expected next reward and
@@ -228,7 +244,24 @@ expected value explicitly in terms of p(s0, r|s, a) defined by (3.2), such that 
 value notation appears in the equation.
 
 #### Answer
-_ToDo_
+
+![answer 3.19.1](assets/answer-003_19_02.png)
+
+![answer 3.19.1](assets/answer-003_19_03.png)
+
+_latex:_
+
+```
+    q_{\pi}(s,a) = 
+    \mathbb{E}\left[r_1 + \gamma v_{\pi}(s'_1) \middle| S_t = s, A_t = a\right] + 
+    \mathbb{E}\left[r_2 + \gamma v_{\pi}(s'_2) \middle| S_t = s, A_t = a\right] +
+    \mathbb{E}\left[r_3 + \gamma v_{\pi}(s'_3) \middle| S_t = s, A_t = a\right] 
+    
+    q_{\pi}(s,a) = 
+    p\left(s'_1, r_1 \middle| s, a\right)\left[r_1 + \gamma v_{pi}\left(s'_1\right)\right] +
+    p\left(s'_2, r_2 \middle| s, a\right)\left[r_2 + \gamma v_{pi}\left(s'_2\right)\right] +
+    p\left(s'_3, r_3 \middle| s, a\right)\left[r_3 + \gamma v_{pi}\left(s'_3\right)\right]
+```    
 
 ### Exercise 3.20
 Draw or describe the optimal state-value function for the golf example.
