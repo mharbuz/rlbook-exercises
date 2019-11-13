@@ -194,3 +194,38 @@ values.
 #### Answer
 
 ![answer 3.17](assets/answer-003_17_01.jpg)
+
+### Exercise 3.18
+The value of a state depends on the values of the actions possible in that
+state and on how likely each action is to be taken under the current policy. We can
+think of this in terms of a small backup diagram rooted at the state and considering each
+possible action:
+
+![backup diagram 3.18](assets/answer-003_18_01.jpg)
+
+Give the equation corresponding to this intuition and diagram for the value at the root
+node, vπ(s), in terms of the value at the expected leaf node, qπ(s, a), given St = s. This
+equation should include an expectation conditioned on following the policy, π. Then give
+a second equation in which the expected value is written out explicitly in terms of π(a|s)
+such that no expected value notation appears in the equation.
+
+#### Answer
+_ToDo_
+
+### Exercise 3.19
+The value of an action, qπ(s, a), depends on the expected next reward and
+the expected sum of the remaining rewards. Again we can think of this in terms of a
+small backup diagram, this one rooted at an action (state–action pair) and branching to
+the possible next states:
+
+![backup diagram 3.19](assets/answer-003_19_01.jpg)
+
+Give the equation corresponding to this intuition and diagram for the action value,
+qπ(s, a), in terms of the expected next reward, Rt+1, and the expected next state value,
+vπ(St+1), given that St =s and At =a. This equation should include an expectation but
+not one conditioned on following the policy. Then give a second equation, writing out the
+expected value explicitly in terms of p(s0, r|s, a) defined by (3.2), such that no expected
+value notation appears in the equation.
+
+#### Answer
+_ToDo_
