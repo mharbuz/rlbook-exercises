@@ -304,3 +304,25 @@ Give the Bellman equation for q* for the recycling robot.
 #### Answer
 
 ![answer 3.23](assets/answer-003_23_01.png)
+
+_latex:_
+
+```
+    q_{*}(h,s) = \alpha \left( r_{search} + \gamma \max_{a'}q_{*}(h,a')\right) + \left(1 - \alpha\right) \left(r_{search} + \gamma \max_{a'}q_{*}\left(l, a'\right)\right)
+    q_{*}(l,s) = \left(1-\beta\right)\left(-3 + \gamma \max_{a'}q_{*}(h,a')\right) + \beta\left(r_{search} + \gamma \max_{a'}q_{*}(l,a')\right)
+    q_{*}(h,w) = \left(r_{wait} + \gamma \max_{a'}q_{*}(h,a')\right)
+    q_{*}(l,w) = \left(r_{wait} + \gamma \max_{a'}q_{*}(l,a')\right)
+    q_{*}(l,re) = \left(0 + \gamma \max_{a'}q_{*}(h,a')\right)
+```
+
+### Exercise 3.24
+
+Figure 3.5 gives the optimal value of the best state of the gridworld as
+24.4, to one decimal place. Use your knowledge of the optimal policy and (3.8) to express
+this value symbolically, and then to compute it to three decimal places.
+
+![figure 3.5](assets/answer-003_24_01.png)
+
+#### Answer
+
+![answer 3.24](assets/answer-003_24_02.png)
