@@ -296,3 +296,11 @@ For γ = 0.9 optimal is π_right policy.
 For γ = 0.5 both policies are equal.
 
 For γ = 0.0 optimal is π_left policy.
+
+### Exercise 3.23
+
+Give the Bellman equation for q* for the recycling robot.
+
+#### Answer
+
+![answer 3.23](assets/answer-003_23_01.png)
