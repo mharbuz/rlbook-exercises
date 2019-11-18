@@ -326,3 +326,29 @@ this value symbolically, and then to compute it to three decimal places.
 #### Answer
 
 ![answer 3.24](assets/answer-003_24_02.png)
+
+### Exercise 3.25
+Give an equation for v* in terms of q*.
+
+#### Answer
+
+![answer 3.25](assets/answer-003_25_01.png)
+
+### Exercise 3.26
+Give an equation for q* in terms of v* and the four-argument p.
+
+#### Answer
+
+![answer 3.26](assets/answer-003_26_01.png)
+
+### Exercise 3.27
+Give an equation for ⇡* in terms of q*.
+
+#### Answer
+
+![answer 3.27](assets/answer-003_27_01.png)
+
+### Exercise 3.28
+Give an equation for ⇡* in terms of v* and the four-argument p.
+
+#### Answer
