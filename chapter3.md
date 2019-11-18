@@ -354,3 +354,5 @@ _I use arg max to siplify notation but π is a probability so it should be equal
 Give an equation for π* in terms of v* and the four-argument p.
 
 #### Answer
+
+![answer 3.28](assets/answer-003_28_01.png)
