@@ -342,13 +342,15 @@ Give an equation for q* in terms of v* and the four-argument p.
 ![answer 3.26](assets/answer-003_26_01.png)
 
 ### Exercise 3.27
-Give an equation for ⇡* in terms of q*.
+Give an equation for π* in terms of q*.
 
 #### Answer
 
 ![answer 3.27](assets/answer-003_27_01.png)
 
+_I use arg max to siplify notation but π is a probability so it should be equal probability for each action has maximum action-value function value_
+
 ### Exercise 3.28
-Give an equation for ⇡* in terms of v* and the four-argument p.
+Give an equation for π* in terms of v* and the four-argument p.
 
 #### Answer
