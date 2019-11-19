@@ -366,6 +366,9 @@ and q*) in terms of the three argument function p (3.4) and the two-argument fun
 #### Answer
 
 ![answer 3.29 vπ](assets/answer-003_29_01.png)
+
 ![answer 3.29 v*](assets/answer-003_29_02.png)
+
 ![answer 3.29 qπ](assets/answer-003_29_03.png)
+
 ![answer 3.29 q*](assets/answer-003_29_04.png)
