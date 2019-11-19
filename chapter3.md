@@ -356,3 +356,16 @@ Give an equation for π* in terms of v* and the four-argument p.
 #### Answer
 
 ![answer 3.28](assets/answer-003_28_01.png)
+
+### Exercise 3.29
+
+Rewrite the four Bellman equations for the four value functions (vπ, v*, qπ,
+and q*) in terms of the three argument function p (3.4) and the two-argument function r
+(3.5).
+
+#### Answer
+
+![answer 3.29 vπ](assets/answer-003_29_01.png)
+![answer 3.29 v*](assets/answer-003_29_02.png)
+![answer 3.29 qπ](assets/answer-003_29_03.png)
+![answer 3.29 q*](assets/answer-003_29_04.png)
