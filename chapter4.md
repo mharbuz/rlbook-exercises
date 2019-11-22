@@ -36,3 +36,18 @@ value function qπ and its successive approximation by a sequence of functions q
 
 #### Answer
 
+#### Exercise 4.4
+
+The policy iteration algorithm on page 80 has a subtle bug in that it may
+never terminate if the policy continually switches between two or more policies that are
+equally good. This is ok for pedagogy, but not for actual use. Modify the pseudocode so
+that convergence is guaranteed.
+
+![algorithm policy iteration](assets/answer-004_04_01.png)
+
+#### Exercise 4.5
+
+How would policy iteration be defined for action values? Give a complete
+algorithm for computing q*, analogous to that on page 80 for computing v*. Please pay
+special attention to this exercise, because the ideas involved will be used throughout the
+rest of the book.
