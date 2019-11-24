@@ -29,12 +29,14 @@ vπ(15) = 1/4 * (-1 + (-20)) = -5.25
 
 
 
-### Exercise 4.3
+#### Exercise 4.3
 
 What are the equations analogous to (4.3), (4.4), and (4.5) for the action-
 value function qπ and its successive approximation by a sequence of functions q0, q1, q2,...?
 
-#### Answer
+##### Answer
+
+![answer 4.3](assets/answer-004_03_01.png)
 
 #### Exercise 4.4
 
@@ -45,7 +47,7 @@ that convergence is guaranteed.
 
 ![algorithm policy iteration](assets/answer-004_04_01.png)
 
-### Exercise 4.5
+#### Exercise 4.5
 
 How would policy iteration be defined for action values? Give a complete
 algorithm for computing q*, analogous to that on page 80 for computing v*. Please pay
@@ -59,9 +61,9 @@ meaning that the probability of selecting each action in each state, s, is at le
 Describe qualitatively the changes that would be required in each of the steps 3, 2, and 1,
 in that order, of the policy iteration algorithm for v* on page 80.
 
-#### Answer
+##### Answer
 
-##### Step 3
+###### Step 3
 
 in line:
 
@@ -69,10 +71,10 @@ in line:
 
 We should change `argmax` function into function that returns each action with probability `ε/|A(s)|` but for action `argmax` returns `1 - ((|A(s)| - 1)/|A(s)|)`.
 
-##### Step 2
+###### Step 2
 
 There is no need to change step 2 because probability `p(s', r | s, π(s))` should have `ε` probabilities for every action inside.
 
-##### Step 1
+###### Step 1
 
 There is no need to change step 1.
