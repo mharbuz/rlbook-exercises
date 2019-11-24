@@ -38,6 +38,12 @@ value function qπ and its successive approximation by a sequence of functions q
 
 ![answer 4.3](assets/answer-004_03_01.png)
 
+_latex:_
+```
+q_{\pi}(s,a) = r(s,a) + \sum_{a'}\mathbb{E}_{\pi}\left[\gamma q_{\pi}(S_{t+1},a') \middle| S_t = s, A_t = a\right] 
+q_{\pi}(s,a) = \sum_{s',a}p\left(s',r \middle| s,a\right)\left[r + \sum_{a'} \pi\left(a' \middle| s'\right)\gamma q_{\pi}(s',a')\right]
+q_{k+1}(s,a) = \sum_{s',a}p\left(s',r \middle| s,a\right)\left[r + \sum_{a'} \pi_{k}\left(a' \middle| s'\right)\gamma q_{k}(s',a')\right]
+```
 #### Exercise 4.4
 
 The policy iteration algorithm on page 80 has a subtle bug in that it may
