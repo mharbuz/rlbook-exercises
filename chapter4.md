@@ -55,7 +55,7 @@ that convergence is guaranteed.
 
 #### Answer
 
-We should change condition `If old-action != π(s)` to condition which takes care about `V(s)` as well. If change in `V(s)` is more than `θ` then `policy-table ← false`
+We should change condition `If old-action != π(s)` to condition which takes care about `V(s)` as well. If change in `V(s)` is more than `θ` then `policy-stable ← false`
 
 ### Exercise 4.5
 
