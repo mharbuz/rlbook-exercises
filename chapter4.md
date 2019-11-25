@@ -91,7 +91,7 @@ There is no need to change step 2 because probability `p(s', r | s, π(s))` shou
 
 There is no need to change step 1.
 
-### Exercise 4.7
+### Exercise 4.8
 
 Why does the optimal policy for the gambler’s problem have such a curious
 form? In particular, for capital of 50 it bets it all on one flip, but for capital of 51 it does
