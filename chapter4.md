@@ -29,7 +29,7 @@ vπ(15) = 1/4 * (-1 + (-20)) = -5.25
 
 
 
-#### Exercise 4.3
+### Exercise 4.3
 
 What are the equations analogous to (4.3), (4.4), and (4.5) for the action-
 value function qπ and its successive approximation by a sequence of functions q0, q1, q2,...?
@@ -44,32 +44,38 @@ q_{\pi}(s,a) = r(s,a) + \sum_{a'}\mathbb{E}_{\pi}\left[\gamma q_{\pi}(S_{t+1},a'
 q_{\pi}(s,a) = \sum_{s',a}p\left(s',r \middle| s,a\right)\left[r + \sum_{a'} \pi\left(a' \middle| s'\right)\gamma q_{\pi}(s',a')\right]
 q_{k+1}(s,a) = \sum_{s',a}p\left(s',r \middle| s,a\right)\left[r + \sum_{a'} \pi_{k}\left(a' \middle| s'\right)\gamma q_{k}(s',a')\right]
 ```
-#### Exercise 4.4
+### Exercise 4.4
 
 The policy iteration algorithm on page 80 has a subtle bug in that it may
 never terminate if the policy continually switches between two or more policies that are
 equally good. This is ok for pedagogy, but not for actual use. Modify the pseudocode so
 that convergence is guaranteed.
 
-![algorithm policy iteration](assets/answer-004_04_01.png)
+![algorithm policy iteration page 80](assets/answer-004_04_01.png)
 
-#### Exercise 4.5
+#### Answer
+
+We should change condition `If old-action != π(s)` to condition which takes care about `V(s)` as well. If change in `V(s)` is more than `θ` then `policy-table ← false`
+
+### Exercise 4.5
 
 How would policy iteration be defined for action values? Give a complete
 algorithm for computing q*, analogous to that on page 80 for computing v*. Please pay
 special attention to this exercise, because the ideas involved will be used throughout the
 rest of the book.
 
-#### Exercise 4.6
+#####
+
+### Exercise 4.6
 
 Suppose you are restricted to considering only policies that are ε-soft,
 meaning that the probability of selecting each action in each state, s, is at least ε/|A(s)|.
 Describe qualitatively the changes that would be required in each of the steps 3, 2, and 1,
 in that order, of the policy iteration algorithm for v* on page 80.
 
-##### Answer
+#### Answer
 
-###### Step 3
+##### Step 3
 
 in line:
 
@@ -77,10 +83,10 @@ in line:
 
 We should change `argmax` function into function that returns each action with probability `ε/|A(s)|` but for action `argmax` returns `1 - ((|A(s)| - 1)/|A(s)|)`.
 
-###### Step 2
+##### Step 2
 
 There is no need to change step 2 because probability `p(s', r | s, π(s))` should have `ε` probabilities for every action inside.
 
-###### Step 1
+##### Step 1
 
 There is no need to change step 1.
