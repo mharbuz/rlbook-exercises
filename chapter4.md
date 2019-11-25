@@ -90,3 +90,13 @@ There is no need to change step 2 because probability `p(s', r | s, π(s))` shou
 ##### Step 1
 
 There is no need to change step 1.
+
+### Exercise 4.7
+
+Why does the optimal policy for the gambler’s problem have such a curious
+form? In particular, for capital of 50 it bets it all on one flip, but for capital of 51 it does
+not. Why is this a good policy?
+
+#### Answer
+
+For capital 50 gambler can win in just one step but for capital 51 is no need to bet all-in because there is no bigger reward for getting 102 insted of 100. Ph is less than 0.5 so the fewer episodes he gets the more likely he wins.
