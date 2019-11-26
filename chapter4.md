@@ -100,3 +100,15 @@ not. Why is this a good policy?
 #### Answer
 
 For capital 50 gambler can win in just one step but for capital 51 is no need to bet all-in because there is no bigger reward for getting 102 insted of 100. Ph is less than 0.5 so the fewer episodes he gets the more likely he wins.
+
+### Exercise 4.9
+
+_programming TODO_
+
+### Exercise 4.10
+
+What is the analog of the value iteration update (4.10) for action values, qk+1(s, a)?
+
+#### Answer
+
+![answer 4.10](assets/answer-004_10_01.png)
