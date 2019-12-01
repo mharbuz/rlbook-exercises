@@ -11,3 +11,5 @@ Have other solutions or think mine are wrong? Share your thoughts!
 [Chapter 2](chapter2.md)
 
 [Chapter 3](chapter3.md)
+
+[Chapter 4](chapter4.md)
