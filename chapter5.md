@@ -33,3 +33,17 @@ What is the backup diagram for Monte Carlo estimation of qπ?
 #### Answer
 
 Backup diagram is the same as for estimating vπ but it starts in action element (black circle).
+
+### Exercise 5.4
+
+The pseudocode for Monte Carlo ES is ineffcient because, for each state–action pair, it maintains a list of all returns and repeatedly calculates their mean. It would be more effcient to use techniques similar to those explained in Section 2.4 to maintain
+just the mean and a count (for each state–action pair) and update them incrementally.
+Describe how the pseudocode would be altered to achieve this.
+
+#### Answer
+
+We can get average from all returns just keeping number of returns and last average. 
+```
+Qty(s,a)++
+Q(s,a) = (Q(s,a)+Rt) * (Qty(s,a) - 1) / Qty(s,a)
+```
