@@ -25,3 +25,11 @@ Suppose every-visit MC was used instead of first-visit MC on the blackjack task.
 #### Answer
 
 Visiting one state more than once within one episode is possible only by switching ace from 11 to 1. It is not very likely to happen so using every-visit MC shouldn't change result significantly.
+
+### Exercise 5.3
+
+What is the backup diagram for Monte Carlo estimation of qπ?
+
+#### Answer
+
+Backup diagram is the same as for estimating vπ but it starts in action element (black circle).
