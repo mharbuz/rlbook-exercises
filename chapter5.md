@@ -69,3 +69,13 @@ v(s) = 10 / 1 = 10
 ##### Every-visit
 
 v(s) = (1 + 2 + 3 + ... + 10) / 10 = 5.5
+
+### Exercise 5.6
+
+What is the equation analogous to (5.6) for action values q(s, a) instead of state values v(s), again given returns generated using b?
+
+![figure 5.6](assets/answer-005_06_02.png)
+
+#### Answer 
+
+![answer 5.6](assets/answer-005_06_01.png)
