@@ -47,3 +47,25 @@ We can get average from all returns just keeping number of returns and last aver
 Qty(s,a)++
 Q(s,a) = (Q(s,a)+Rt) * (Qty(s,a) - 1) / Qty(s,a)
 ```
+
+### Exercise 5.5
+
+Consider an MDP with a single nonterminal state and a single action
+that transitions back to the nonterminal state with probability p and transitions to the
+terminal state with probability 1-p. Let the reward be +1 on all transitions, and let γ = 1. Suppose you observe one episode that lasts 10 steps, with a return of 10. What are the first-visit and every-visit estimators of the value of the nonterminal state?
+
+#### Answer
+
+| step   	| 0 	| 1 	| 2 	| 3 	| 4 	| 5 	| 6 	| 7 	| 8 	| 9   	| 10 	|
+|--------	|---	|---	|---	|---	|---	|---	|---	|---	|---	|:-----:	|:----:	|
+| state  	| s 	| s 	| s 	| s 	| s 	| s 	| s 	| s 	| s 	| s   	| T  	|
+| reward 	| 1 	| 1 	| 1 	| 1 	| 1 	| 1 	| 1 	| 1 	| 1 	| 1   	| -  	|
+| action 	| p 	| p 	| p 	| p 	| p 	| p 	| p 	| p 	| p 	| 1-p 	| -  	|
+
+##### First-visit
+
+v(s) = 10 / 1 = 10
+
+##### Every-visit
+
+v(s) = (1 + 2 + 3 + ... + 10) / 10 = 5.5
