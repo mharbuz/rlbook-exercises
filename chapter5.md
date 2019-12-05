@@ -79,3 +79,13 @@ What is the equation analogous to (5.6) for action values q(s, a) instead of sta
 #### Answer 
 
 ![answer 5.6](assets/answer-005_06_01.png)
+
+### Exercise 5.7
+
+In learning curves such as those shown in Figure 5.3 error generally decreases with training, as indeed happened for the ordinary importance-sampling method. But for the weighted importance-sampling method error first increased and then decreased. Why do you think this happened?
+
+![figure 5.3](assets/answer-005_07_01.png)
+
+#### Answer
+
+Actions are choosen randomly
