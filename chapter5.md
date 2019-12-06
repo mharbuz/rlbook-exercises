@@ -88,4 +88,16 @@ In learning curves such as those shown in Figure 5.3 error generally decreases w
 
 #### Answer
 
+TODO
 Actions are choosen randomly
+
+### Exercise 5.8
+
+The results with Example 5.5 and shown in Figure 5.4 used a first-visit MC
+method. Suppose that instead an every-visit MC method was used on the same problem.
+Would the variance of the estimator still be infinite? Why or why not?
+
+#### Answer
+
+Reward appears only at last step of episode so for every-visit MC method Gi = 1 and average is i*1 / i = 1  same as in first-visit method.
+
