@@ -89,7 +89,7 @@ In learning curves such as those shown in Figure 5.3 error generally decreases w
 #### Answer
 
 TODO
-Actions are choosen randomly
+Actions are choosen randomly and over some number of first steps and a lot of rewards are negative (-1). Over time number of episodes increases and most of actions from equiprobable policy has probability = 0 and that value is different from real value. Only after explore enough state and actions the mean is correc
 
 ### Exercise 5.8
 
