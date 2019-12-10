@@ -125,3 +125,12 @@ Don't forget to initialize
 N(st) = 0
 ```
 at the beginning.
+
+### Exercise 5.10
+
+Derive the weighted-average update rule (5.8) from (5.7). Follow the
+pattern of the derivation of the unweighted rule (2.3).
+
+#### Answer
+
+![answer 5.10](assets/answer-005_10_01.png)
