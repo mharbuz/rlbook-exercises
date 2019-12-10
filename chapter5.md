@@ -101,3 +101,27 @@ Would the variance of the estimator still be infinite? Why or why not?
 
 Reward appears only at last step of episode so for every-visit MC method Gi = 1 and average is i*1 / i = 1  same as in first-visit method.
 
+### Exercise 5.9
+
+Modify the algorithm for first-visit MC policy evaluation (Section 5.1) to
+use the incremental implementation for sample averages described in Section 2.4.
+
+![first visit MC](assets/answer-005_09_01.png)
+
+#### Answer
+
+Instead of using (last 2 lines)
+```
+Append G to Returns(St)
+V(St) <- average(Returns(St))
+```
+compute V(St) only from last V(St) value and counter N(A)
+```
+N(St) <- N(St) + 1
+V(st) <- V(St) + 1/N(St) * [G - V(St)]
+```
+Don't forget to initialize 
+```
+N(st) = 0
+```
+at the beginning.
