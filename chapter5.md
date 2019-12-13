@@ -134,3 +134,13 @@ pattern of the derivation of the unweighted rule (2.3).
 #### Answer
 
 ![answer 5.10](assets/answer-005_10_01.png)
+
+### Exercise 5.11
+
+In the boxed algorithm for off-policy MC control, you may have been
+expecting the W update to have involved the importance-sampling ratio π(At|St)/b(At|St), but
+instead it involves 1/b(At|St) . Why is this nevertheless correct?
+
+#### Answer 
+
+POlicy π is greedy so probability of taking action At in state St is 1.
