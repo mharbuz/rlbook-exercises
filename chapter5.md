@@ -144,3 +144,19 @@ instead it involves 1/b(At|St) . Why is this nevertheless correct?
 #### Answer 
 
 POlicy π is greedy so probability of taking action At in state St is 1.
+
+### Exercise 5.12
+
+programming - skipped
+
+### Exercise 5.13
+
+Show the steps to derive (5.14) from (5.12).
+
+![equation 5.12](assets/answer-005_13_01.png)
+
+![equation 5.14](assets/answer-005_13_02.png)
+
+#### Answer
+
+![answer 5.13](assets/answer-005_13_03.png)
