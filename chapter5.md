@@ -160,3 +160,15 @@ Show the steps to derive (5.14) from (5.12).
 #### Answer
 
 ![answer 5.13](assets/answer-005_13_03.png)
+
+_latex:_
+```
+\mathbb{E}\left[\rho_{t:T-1}R_{t+1}\right] = \mathbb{E}\left[\rho_{t:T-1}\right]\cdot\mathbb{E}\left[R_{t+1}\right] = 
+= \mathbb{E}\left[\frac{\pi\left(A_t \middle| S_t\right)}{b\left(A_t \middle| S_t\right)}\right]
+\cdot
+\mathbb{E}\left[\frac{\pi\left(A_{t+1} \middle| S_{t+1}\right)}{b\left(A_{t+1} \middle| S_{t+1}\right)}\right]
+\cdot \ldots \cdot
+\mathbb{E}\left[\frac{\pi\left(A_{T-1} \middle| S_{T-1}\right)}{b\left(A_{T-1} \middle| S_{T-1}\right)}\right]
+\cdot\mathbb{E}\left[R_{t+1}\right] =
+= \mathbb{E}\left[\rho_{t:t}R_{t+1}\right]
+```   
