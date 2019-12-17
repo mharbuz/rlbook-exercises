@@ -172,3 +172,12 @@ _latex:_
 \cdot\mathbb{E}\left[R_{t+1}\right] =
 = \mathbb{E}\left[\rho_{t:t}R_{t+1}\right]
 ```   
+### Exercise 5.14
+
+Modify the algorithm for off-policy Monte Carlo control (page 111) to use
+the idea of the truncated weighted-average estimator (5.10). Note that you will first need
+to convert this equation to action values.
+
+#### Answer
+
+TODO
