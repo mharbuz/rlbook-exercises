@@ -89,3 +89,16 @@ these could have been computed. Which would you guess we actually used? Why?
 
 #### Answer
 
+This can be done by using value iteration which converges to the result. Model for this example is easy to implement so this method is quite possible.
+
+Another way is to start from V(C) which has to be 0.5.
+
+To calculate every state-values use equations:
+
+V(D) = 0.5 * (V(C) + V(E)) = 0.25 + 0.5 * V(E)
+
+V(E) = 0.5 * (V(D) + 1) = 0.5 * (0.25 + V(E) + 1) -> V(E) = 5/6 & V(D) = 4/6
+
+V(B) = 0.5 * (V(A) + V(C)) = 0.5 * V(A) + 0.25
+
+V(A) = 0.5 * (0 + V(B)) = 0.5 * (0.5 * V(A) + 0.25) -> V(A) = 1/6 & V(B) = 2/6
