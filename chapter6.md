@@ -81,6 +81,10 @@ approximate value function was initialized?
 
 #### Answer
 
+Initially every state-value is 0.5 and that's correct value on average. When some of state-values are corrected then RMS can be lower and after few more episodes, when other state-values are calculated on algorithm basis, RMS can be higher.
+
+If initial state-values are choosen far from true value it shouldn't occured (but probably it takes longer algorithm to converge).
+
 ### Exercise 6.6
 
 In Example 6.2 we stated that the true values for the random walk example
