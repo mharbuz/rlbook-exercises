@@ -110,3 +110,25 @@ V(E) = 0.5 * (V(D) + 1) = 0.5 * (0.25 + V(E) + 1) -> V(E) = 5/6 & V(D) = 4/6
 V(B) = 0.5 * (V(A) + V(C)) = 0.5 * V(A) + 0.25
 
 V(A) = 0.5 * (0 + V(B)) = 0.5 * (0.5 * V(A) + 0.25) -> V(A) = 1/6 & V(B) = 2/6
+
+### Exercise 6.7
+
+Design an off-policy version of the TD(0) update that can be used with 
+arbitrary target policy π and covering behavior policy b, using at each step t the importance
+sampling ratio 𝜌t:t (5.3).
+
+#### Answer
+
+TODO
+
+### Exercise 6.8
+
+Show that an action-value version of (6.6) holds for the action-value form
+of the TD error δt = Rt+1 + γQ(St+1,At+1) − Q(St,At), again assuming that the values
+don’t change from step to step.
+
+#### Answer
+
+For MC method V(St) = Q(St, At).
+
+![answer 6.8](assets/answer-006_08_01.png)
