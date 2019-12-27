@@ -40,6 +40,8 @@ appears that the first episode results in a change in only V(A). What does this 
 about what happened on the first episode? Why was only the estimate for this one state
 changed? By exactly how much was it changed?
 
+![example 6.2 left graph](assets/answer-006_03_01.png)
+
 #### Answer
 
 First episode ended in left terminal state (reward = 0) because V(A) lowered.
@@ -65,6 +67,8 @@ are dependent on the value of the step-size parameter, α. Do you think the conc
 about which algorithm is better would be affected if a wider range of α values were used?
 Is there a different, fixed value of α at which either algorithm would have performed
 significantly better than shown? Why or why not?
+
+![example 6.2 right graph](assets/answer-006_04_01.png)
 
 #### Answer 
 
