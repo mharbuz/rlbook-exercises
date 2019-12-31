@@ -35,3 +35,18 @@ _latex:_
     = R_{t+1} + \gamma R_{t+2} + \ldots + \gamma^n V_{(n)}(S_{t+n}) - V(S_t) + \gamma^n \left(G_{t+n:t+2n} - V_{(n)}(S_{t+n})\right) = 
     = \sum_{k=0}^{\frac{T-1}{n}} \gamma^{nk} \delta_{t+nk:n}
 ```    
+
+### Exercise 7.2
+
+programming
+
+### Exercise 7.3
+
+Why do you think a larger random walk task (19 states instead of 5) was
+used in the examples of this chapter? Would a smaller walk have shifted the advantage
+to a different value of n? How about the change in left-side outcome from 0 to −1 made
+in the larger walk? Do you think that made any di↵erence in the best value of n?
+
+#### Answer 
+
+TODO
