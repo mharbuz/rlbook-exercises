@@ -49,4 +49,8 @@ in the larger walk? Do you think that made any di↵erence in the best value of 
 
 #### Answer 
 
-TODO
+Differences between different n and α would be smaller for 5 states than for 19 states.
+
+5 states example can cause better value for smaller n than n=4.
+
+If we change left-side reward to -1 and left initial value untouched the initial value will be more optimistic but it should minimized after first 10 episodes.
