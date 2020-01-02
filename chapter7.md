@@ -54,3 +54,13 @@ Differences between different n and α would be smaller for 5 states than for 19
 5 states example can cause better value for smaller n than n=4.
 
 If we change left-side reward to -1 and left initial value untouched the initial value will be more optimistic but it should minimized after first 10 episodes.
+
+### Exercise 7.4
+Prove that the n-step return of Sarsa (7.4) can be written exactly in terms
+of a novel TD error, as
+
+![exercise 7.4](assets/answer-007_04_01.png)
+
+#### Answer
+
+![answer 7.4](assets/answer-007_04_02.png)
