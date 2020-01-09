@@ -64,3 +64,18 @@ of a novel TD error, as
 #### Answer
 
 ![answer 7.4](assets/answer-007_04_02.png)
+
+### Exercise 7.5
+
+TODO
+
+### Exercise 7.6
+
+![equation 7.14](assets/answer-007_06_01.png)
+
+Prove that the control variate in the above equations (7.14) does not change the
+expected value of the return.
+
+#### Answer
+
+See p. 4 in [Per-decision Multi-step Temporal Difference Learning with Control Variates - Asis, Sutton](https://arxiv.org/pdf/1807.01830.pdf)
