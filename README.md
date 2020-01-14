@@ -17,3 +17,7 @@ Have other solutions or think mine are wrong? Share your thoughts!
 [Chapter 5](chapter5.md)
 
 [Chapter 6](chapter6.md)
+
+[Chapter 7](chapter7.md)
+
+[Chapter 8](chapter8.md)
