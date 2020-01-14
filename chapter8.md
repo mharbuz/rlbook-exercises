@@ -14,3 +14,23 @@ n-step TD with n high enough to cover optimal path from starting point to termin
 More intuition from Figure 7.4:
 
 ![figure 7.4](assets/answer-008_01_01.png)
+
+### Exercise 8.2
+
+Why did the Dyna agent with exploration bonus, Dyna-Q+, perform
+better in the first phase as well as in the second phase of the blocking and shortcut
+experiments?
+
+#### Answer
+
+Dyna-Q is less explorative and after first time it found way to get into terminal state it sticks to it for a longer time.
+
+### Exercise 8.3
+
+Careful inspection of Figure 8.5 reveals that the difference between Dyna-Q+
+and Dyna-Q narrowed slightly over the first part of the experiment. What is the reason
+for this?
+
+#### Answer 
+
+Dyna-Q+ finds more efficient patch much faster but after some time Dyna-Q finds it too. Exploration cost for Dyna-Q+ is bigger than for Dyna-Q and that's the reason.
