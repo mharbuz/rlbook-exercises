@@ -34,3 +34,20 @@ for this?
 #### Answer 
 
 Dyna-Q+ finds more efficient patch much faster but after some time Dyna-Q finds it too. Exploration cost for Dyna-Q+ is bigger than for Dyna-Q and that's the reason.
+
+### Exercise 8.5
+
+1. How might the tabular Dyna-Q algorithm shown on page 164 be modified
+to handle stochastic environments? 
+2. How might this modification perform poorly on
+changing environments such as considered in this section? 
+3. How could the algorithm be
+modified to handle stochastic environments and changing environments?
+
+![Tabular Dyna-Q page 164](assets/answer-008_05_01.png)
+
+#### Answer
+
+1. We should add R and S' in step _(e)_ as next element in array (like _Model(S,A)[] ← R,S'_), then in step 4 of _(f)_ loop we can randomly select next R and S' from array
+2. The reason can be exactly the same as in Example 8.3: Shortcut Maze
+3. We can add exploration bonus (Dyna-Q+ for env changing into better conditions) and we can add tracking of changes in Q(S,A); when change is "large" and negative we can zeroing at all
