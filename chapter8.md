@@ -51,3 +51,16 @@ modified to handle stochastic environments and changing environments?
 1. We should add R and S' in step _(e)_ as next element in array (like _Model(S,A)[] ← R,S'_), then in step 4 of _(f)_ loop we can randomly select next R and S' from array
 2. The reason can be exactly the same as in Example 8.3: Shortcut Maze
 3. We can add exploration bonus (Dyna-Q+ for env changing into better conditions) and we can add tracking of changes in Q(S,A); when change is "large" and negative we can zeroing at all
+
+### Exercise 8.6
+
+![sample updates vs expected updates](assets/answer-008_06_01.png)
+
+The analysis above assumed that all of the b possible next states were
+equally likely to occur. Suppose instead that the distribution was highly skewed, that
+some of the b states were much more likely to occur than most. Would this strengthen or
+weaken the case for sample updates over expected updates? Support your answer.
+
+#### Answer
+
+Sample updates in environment with highly skewed distribution over states probabilities would be closer to what we see for lower values of b because there are less "meaningfull" states.
