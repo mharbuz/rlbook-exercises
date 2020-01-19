@@ -74,3 +74,5 @@ this is? What aspects of the data shown support your hypothesis?
 ![figure 8.8](assets/answer-008_07_01.png)
 
 #### Answer 
+
+Scalloped comes from rewards distribution. On each episode uniform algorithm need to take into consideration poor state-action values which doesn't make policy improvement (more horizontal parts of line).
