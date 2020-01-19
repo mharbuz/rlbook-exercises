@@ -64,3 +64,13 @@ weaken the case for sample updates over expected updates? Support your answer.
 #### Answer
 
 Sample updates in environment with highly skewed distribution over states probabilities would be closer to what we see for lower values of b because there are less "meaningfull" states.
+
+### Exercise 8.7
+
+Some of the graphs in Figure 8.8 seem to be scalloped in their early portions,
+particularly the upper graph for b = 1 and the uniform distribution. Why do you think
+this is? What aspects of the data shown support your hypothesis?
+
+![figure 8.8](assets/answer-008_07_01.png)
+
+#### Answer 
