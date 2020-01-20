@@ -4,7 +4,13 @@ for
 ### Richard S. Sutton and Andrew G. Barto
 The book can be found: https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf
 
-Have other solutions or think mine are wrong? Share your thoughts! 
+-----
+
+Have other solutions or think mine are wrong? Share your thoughts ([open an issue](https://github.com/mharbuz/rlbook-exercises/issues/new))! 
+
+-----
+
+## Part I
 
 [Chapter 1](chapter1.md)
 
