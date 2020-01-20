@@ -10,20 +10,25 @@ Have other solutions or think mine are wrong? Share your thoughts ([open an issu
 
 -----
 
-## Part I
+## Introduction
 
-[Chapter 1](chapter1.md)
+[Chapter 1](chapter1.md) - Introduction
 
-[Chapter 2](chapter2.md)
+## Part I - Tabular Solution Methods
 
-[Chapter 3](chapter3.md)
+[Chapter 2](chapter2.md) - Multi-armed Bandits
 
-[Chapter 4](chapter4.md)
+[Chapter 3](chapter3.md) - Finite Markov Decision Processes
 
-[Chapter 5](chapter5.md)
+[Chapter 4](chapter4.md) - Dynamic Programming
 
-[Chapter 6](chapter6.md)
+[Chapter 5](chapter5.md) - Monte Carlo Methods
 
-[Chapter 7](chapter7.md)
+[Chapter 6](chapter6.md) - Temporal-Di↵erence Learning
 
-[Chapter 8](chapter8.md)
+[Chapter 7](chapter7.md) - n-step Bootstrapping
+
+[Chapter 8](chapter8.md) - Planning and Learning with Tabular Methods
+
+## Part II - Approximate Solution Methods
+
