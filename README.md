@@ -32,3 +32,4 @@ Have other solutions or think mine are wrong? Share your thoughts ([open an issu
 
 ## Part II - Approximate Solution Methods
 
+[Chapter 9](chapter9.md) - On-policy Prediction with Approximation
