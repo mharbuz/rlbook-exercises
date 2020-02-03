@@ -47,4 +47,16 @@ c_i,j:
 |   **8** 	| 2 	| 1 	|     s<sub>1</sub><sup>2</sup>s<sub>2</sub>     	|
 |   **9** 	| 2 	| 2 	|     s<sub>1</sub><sup>2</sup>s<sub>2</sub><sup>2</sup>     	|
 
+### Exercise 9.4
+
+Suppose we believe that one of two state dimensions is more likely to have
+an effect on the value function than is the other, that generalization should be primarily
+across this dimension rather than along it. What kind of tilings could be used to take
+advantage of this prior knowledge?
+
+#### Answer
+
+In case of diagonal tiling splitting can be more across more meaningfull dimension than the others.
+In general case we can choose smaller tailing width across that dimension and bigger tailing width across other dimensions to keep number of tiles small enough and minimize errors.
+
 
