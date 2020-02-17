@@ -9,3 +9,19 @@ pseudocode for them? How would they perform on the Mountain Car task?
 #### Answer
 
 There is no approximation in Monte Carlo methods because with MC methods we know exactly what episode reward is (MC method ends with episode end).
+
+### Exercise 10.2
+
+Give pseudocode for semi-gradient one-step Expected Sarsa for control.
+
+#### Answer
+
+In third line from the bottom of Sarsa pseudocode:
+
+![pasudocode for sarsa](assets/answer-010_02_02.png)
+
+we need to replace last term of q with:
+
+![answer 10.2](assets/answer-010_02_01.png)
+
+
