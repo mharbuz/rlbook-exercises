@@ -33,3 +33,29 @@ large n than at small n?
 
 Small change in 𝛂 value is multiplied by n??
 
+### Exercise 10.4
+
+Give pseudocode for a differential version of semi-gradient Q-learning.
+
+#### Answer
+
+TODO
+
+### Exercise 10.5
+
+What equations are needed (beyond 10.10) to specify the differential
+version of TD(0)?
+
+#### Answer 
+
+There we need equation for vector w update like in 10.12 but for state-valueintead of action-value.
+
+### Exercise 10.6
+
+Consider a Markov reward process consisting of a ring of three states A, B,
+and C, with state transitions going deterministically around the ring. A reward of +1 is
+received upon arrival in A and otherwise the reward is 0. What are the diferential values
+of the three states?
+
+#### Answer
+
