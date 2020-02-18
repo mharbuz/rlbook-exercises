@@ -24,4 +24,12 @@ we need to replace last term of q with:
 
 ![answer 10.2](assets/answer-010_02_01.png)
 
+### Exercise 10.3
+
+Why do the results shown in Figure 10.4 have higher standard errors at
+large n than at small n?
+
+#### Answer 
+
+Small change in 𝛂 value is multiplied by n??
 
