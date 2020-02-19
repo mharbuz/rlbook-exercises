@@ -24,7 +24,7 @@ Have other solutions or think mine are wrong? Share your thoughts ([open an issu
 
 [Chapter 5](chapter5.md) - Monte Carlo Methods
 
-[Chapter 6](chapter6.md) - Temporal-Di↵erence Learning
+[Chapter 6](chapter6.md) - Temporal-Difference Learning
 
 [Chapter 7](chapter7.md) - n-step Bootstrapping
 
