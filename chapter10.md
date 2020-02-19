@@ -59,3 +59,6 @@ of the three states?
 
 #### Answer
 
+![answer 10.6](assets/answer-010_06_01.png)
+
+Differential value fore each state is 0.
