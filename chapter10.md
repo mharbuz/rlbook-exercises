@@ -98,7 +98,35 @@ to the errors? Why?
 #### Answer
 
 Rt+1 - ¯Rt sequence would be: 1/3, 1/4, 1/5, 1/3, 1/4, 1/5, ...
+
 with ẟt it would be: 1/3, 1/4, 1/5, 1/3, 2/7, 2/8, 1/3, 3/10, 3/11, 1/3, 4/13, 4/14, 1/3, ...
 
+## Exercise 10.9
+
+In the differential semi-gradient n-step Sarsa algorithm, the step-size
+parameter on the average reward, &, needs to be quite small so that ¯R becomes a good
+long-term estimate of the average reward. Unfortunately, ¯R will then be biased by its
+initial value for many steps, which may make learning inefficient. Alternatively, one could
+use a sample average of the observed rewards for ¯R. That would initially adapt rapidly
+but in the long run would also adapt slowly. As the policy slowly changed, ¯R would also
+change; the potential for such long-term nonstationarity makes sample-average methods
+ill-suited. In fact, the step-size parameter on the average reward is a perfect place to use
+the unbiased constant-step-size trick from Exercise 2.7. Describe the specific changes
+needed to the boxed algorithm for di↵erential semi-gradient n-step Sarsa to use this
+trick.
+
+![algorithm differential semi-gradient n-step Sarsa](assets/answer-010_09_01.png)
+
+#### Answer
+
+We need to initialize step-size param o = 0
+
+Then istead of update R = R + 𝛽*𝛿  update R from equation:
+
+R = R + 𝛽/(o + 𝛽(1-o))*𝛿 
+
+and update parameter o
+
+o = o + 𝛽(1-o)
 
 
