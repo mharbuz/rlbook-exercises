@@ -35,3 +35,7 @@ Have other solutions or think mine are wrong? Share your thoughts ([open an issu
 [Chapter 9](chapter9.md) - On-policy Prediction with Approximation
 
 [Chapter 10](chapter10.md) - On-policy Control with Approximation
+
+Chapter 11 - Off-policy Methods with Approximation
+
+[Chapter 12](chapter12.md) - Eligibility Traces
