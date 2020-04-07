@@ -62,8 +62,24 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+n = 10;
+size(y)
+yvec = zeros(size(y),n);
+for c = 1:n
+  yvec(:,c) = (y == c);
+endfor
+size(yvec)
 
+X = [ones(m, 1) X];
 
+h = sigmoid(X * Theta1');
+h = [ones(m, 1) h];
+h = sigmoid(h * Theta2');
+
+theta_zero = Theta1;
+theta_zero(1) = 0;
+J = (1/m)*(-y'*log(h) - (1-y)'*log(1-h));% + (lambda/(2*m))*sum((theta_zero).^2);
+grad = (1/m)*X'*(h-y);% + theta_zero*lambda/m;
 
 
 
