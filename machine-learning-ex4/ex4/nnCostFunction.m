@@ -70,42 +70,30 @@ endfor
 
 X = [ones(m, 1) X];
 J = 0;
+J_lambda = 0;
 for c = 1:size(X, 1)
   X_ex = X(c, :);
   h = sigmoid(X_ex * Theta1');
   h = [ones(size(h, 1), 1) h];
   h = sigmoid(h * Theta2');
   
-  theta_zero = Theta1;
-  theta_zero(1) = 0;
-  J += (-yvec(c,:)'*log(h) - (1-yvec(c,:))'*log(1-h))
+  J += (-yvec(c,:)*log(h)' - (1-yvec(c,:))*log(1-h)');
 endfor
 
 J = J * (1/m);
 
-%size(X)
-%size(Theta1)
-%size(Theta2)
-%h = sigmoid(X * Theta1');
-%h = [ones(m, 1) h];
-%h = sigmoid(h * Theta2');
-  
-%J = (1/m)*(-yvec'*log(h) - (1-yvec)'*log(1-h));% + (lambda/(2*m))*sum((theta_zero).^2);
-%grad = (1/m)*X'*(h-yvec);% + theta_zero*lambda/m;
+% regularization
+theta_zero = Theta1;
+theta_zero(:,1) = zeros(size(theta_zero, 1), 1);
+J_lambda += sum(sum((theta_zero).^2)); 
 
+theta_zero = Theta2;
+theta_zero(:,1) = zeros(size(theta_zero, 1), 1);
+J_lambda += sum(sum((theta_zero).^2)); 
+J_lambda = (lambda/(2*m)) * J_lambda;
 
-
-
-
-
-
-
-
-
-
-
-
-
+%sum it up
+J = J + J_lambda;
 
 % -------------------------------------------------------------
 
