@@ -62,9 +62,8 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
-n = 10;
-yvec = zeros(size(y),n);
-for c = 1:n
+yvec = zeros(size(y), num_labels);
+for c = 1:num_labels
   yvec(:,c) = (y == c);
 endfor
 
@@ -94,6 +93,8 @@ J_lambda = (lambda/(2*m)) * J_lambda;
 
 %sum it up
 J = J + J_lambda;
+
+
 
 % -------------------------------------------------------------
 
