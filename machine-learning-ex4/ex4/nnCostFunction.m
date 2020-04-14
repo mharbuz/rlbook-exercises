@@ -70,13 +70,28 @@ endfor
 X = [ones(m, 1) X];
 J = 0;
 J_lambda = 0;
+delta = 0;
 for c = 1:size(X, 1)
   X_ex = X(c, :);
-  h = sigmoid(X_ex * Theta1');
-  h = [ones(size(h, 1), 1) h];
-  h = sigmoid(h * Theta2');
   
-  J += (-yvec(c,:)*log(h)' - (1-yvec(c,:))*log(1-h)');
+  a_1 = X_ex;
+  z_2 = X_ex * Theta1';
+  h = sigmoid(z_2);
+  a_2 = h;
+  h = [ones(size(h, 1), 1) h];
+  z_3 = h * Theta2';
+  h = sigmoid(z_3);
+  a_3 = h;
+  
+  a_1 = [1, a_1];
+  a_2 = [1, a_2];
+  
+  delta_3 = a_3 - yvec(c, :);
+  delta_2 = Theta2'*delta_3';% .* sigmoidGradient(z_2);
+  
+  Theta2_grad += delta_3 * a_2;
+  Theta1_grad += delta_2 * a_1;
+  J += (-yvec(c, :)*log(h)' - (1-yvec(c, :))*log(1-h)');
 endfor
 
 J = J * (1/m);
