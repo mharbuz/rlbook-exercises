@@ -73,38 +73,40 @@ J_lambda = 0;
 delta = 0;
 for c = 1:size(X, 1)
   X_ex = X(c, :);
-  
-  a_1 = X_ex;
-  z_2 = X_ex * Theta1';
+  a_1 = X_ex; % 1x401
+  z_2 = X_ex * Theta1'; % 1x25
   h = sigmoid(z_2);
   a_2 = h;
-  h = [ones(size(h, 1), 1) h];
-  z_3 = h * Theta2';
+  h = [ones(size(h, 1), 1) h]; % 1x26
+  z_3 = h * Theta2';  % 1x10
   h = sigmoid(z_3);
   a_3 = h;
   
-  a_1 = [1, a_1];
   a_2 = [1, a_2];
   
   delta_3 = a_3 - yvec(c, :);
-  delta_2 = Theta2'*delta_3';% .* sigmoidGradient(z_2);
+  delta_2 = delta_3 * Theta2(:,2:end) .* sigmoidGradient(z_2);
   
-  Theta2_grad += delta_3 * a_2;
-  Theta1_grad += delta_2 * a_1;
+  Theta2_grad += delta_3' * a_2; % 10 x 1 * 1 x 25
+  Theta1_grad += delta_2' * a_1; % 25 x 1 * 1 x 401
   J += (-yvec(c, :)*log(h)' - (1-yvec(c, :))*log(1-h)');
 endfor
 
 J = J * (1/m);
+Theta2_grad = Theta2_grad / m;
+Theta1_grad = Theta1_grad / m;
 
 % regularization
 theta_zero = Theta1;
 theta_zero(:,1) = zeros(size(theta_zero, 1), 1);
-J_lambda += sum(sum((theta_zero).^2)); 
+J_lambda += sum(sum((theta_zero).^2));
+Theta1_grad += (lambda/m) * theta_zero;
 
 theta_zero = Theta2;
 theta_zero(:,1) = zeros(size(theta_zero, 1), 1);
 J_lambda += sum(sum((theta_zero).^2)); 
 J_lambda = (lambda/(2*m)) * J_lambda;
+Theta2_grad += (lambda/m) * theta_zero;
 
 %sum it up
 J = J + J_lambda;
