@@ -47,6 +47,7 @@ for i=1:max_iters
     if plot_progress
         plotProgresskMeans(X, centroids, previous_centroids, idx, K, i);
         previous_centroids = centroids;
+        centroids
         fprintf('Press enter to continue.\n');
         pause;
     end

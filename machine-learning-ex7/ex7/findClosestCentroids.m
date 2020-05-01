@@ -21,7 +21,18 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
-
+for i = 1:size(X,1)
+  closest = 0;
+  distance = inf;
+  for j = 1:K
+    curr_distance = norm(X(i,:) .- centroids(j,:));
+    if curr_distance <=  distance
+      closest = j;
+      distance = curr_distance;
+    endif
+  endfor
+  idx(i) = closest;
+endfor
 
 
 
